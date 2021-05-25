@@ -1,0 +1,30 @@
+{
+  "widget": {
+    "name": "widget.name",
+    "description": "widget.description",
+    "short_description": "widget.short_description",
+    "version": "1.0.1",
+    "interface_version": 2,
+    "init_once": true,
+    "locale": [
+      "ru",
+      "en"
+    ],
+    "installation": true
+  },
+  "locations": [
+    "settings",
+    "digital_pipeline"
+  ],
+  "settings": {
+    "login": {
+      "name": "settings.login",
+      "type": "text",
+      "required": false
+    }
+  },
+  "dp": {
+    "action_multiple": false,
+    "webhook_url": "https://smart-dev.pragma.by/api/own/autocall/amocrm/lirax_hook.php"
+  }
+}

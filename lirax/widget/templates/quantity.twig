@@ -1,0 +1,12 @@
+<div class="pragma_quantity">
+    <div class="label_value_{{ i }}">
+        <label for="">{{ i }} - </label>
+    </div>
+    <div class="label_time_start_{{ i }}">
+        {{ include_control('input', {
+            id: 'quantity_' ~ i,
+            type: "time",
+            class_name: 'quantity_pragma'
+        }) }}
+    </div>
+</div>

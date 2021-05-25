@@ -1,0 +1,11 @@
+{
+    "widget":{
+        "name":"MyWidget",
+        "short_description":"Short description",
+        "description":"Full description",
+        "tour_description":"Tour description"
+    },
+    "settings":{
+        "login":"Enter key"
+    }
+}

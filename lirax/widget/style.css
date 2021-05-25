@@ -1,0 +1,193 @@
+.pragma-lirax-amo{
+    display: flex;
+}
+
+.right_page_lirax,
+.left_page_lirax{
+    margin-top:20px;
+    flex: 50%;
+    margin-bottom:15px;
+}
+
+.digital_funnel--item div{
+    display:inline-block;
+    margin-top:11px;
+
+}
+
+.digital_funnel--item--input{
+    float:right;
+    margin-right:120px;
+}
+
+.pragma-lirax-amo-enter_number_funnel{
+    position:absolute;
+    width:80px;
+    text-align:center;
+    margin-top:-4px;
+    padding-left:20px;
+    height:28px;
+    border-radius: 100px;
+    border: 1px solid #cfdaec;
+    color: #000000;
+    font-family: PT Sans, serif;
+    font-size:16px;
+}
+
+.funnel_number{
+    margin-top:15px;
+
+}
+
+.time-pragma_foot_finish,
+.time-pragma_foot_start{
+
+    border-radius: 100px;
+    border: 1px solid #cfdaec;
+    color: #000000;
+    font-family: PT Sans, serif;
+    font-size:16px;
+}
+
+
+#pragma-responsible{
+    margin-left:20px;
+    margin-right:10px;
+    width:70px;
+    border-radius: 100px;
+    border: 1px solid #cfdaec;
+    color: #000000;
+    font-family: PT Sans, serif;
+    font-size:16px;
+}
+.funnel_number_input{
+    float:right;
+    width:80px;
+    margin-top:-23px;
+    margin-right:20px;
+    height:28px;
+    text-align:center;
+    border-radius: 100px;
+    border: 1px solid #cfdaec;
+    color: #000000;
+    font-family: PT Sans, serif;
+    font-size: 16px;
+}
+
+.digital_funnel--item--label{
+    width: 170px;
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+
+.pragma-lirax-amo_divalbe{
+    width: 170px;
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.pragma-lirax-place-funnel_number{
+    margin-top:-4px;
+}
+
+.left_page_responsible{
+    margin-top:20px;
+}
+
+
+.label_time_finish,
+.label_time_start{
+    display:inline-block;
+    margin-left:10px;
+    margin-bottom:10px;
+
+}
+
+.label_time_start{
+    margin-top:15px;
+    margin-bottom:15px;
+    margin-left:20px;
+}
+
+.pragma_quantity div{
+    display:inline-block;
+}
+
+.pragma-quantity_tell{
+    width:60px;
+    text-align:center;
+    padding-left:10px;
+    margin-left:15px;
+    margin-bottom:10px;
+    border-radius:100px;
+
+
+}
+.pragma_quantity{
+    display:inline-block;
+    margin-right:50px;
+    margin-bottom:10px;
+
+}
+
+.quantity_pragma{
+    border-radius:100px;
+    text-align:center;
+}
+
+.table_pragma-name{
+    display:inline-block;
+    width:40%;
+}
+.table_pragma-priority{
+    display:inline-block;
+}
+.table_pragma-no{
+    display:inline-block;
+    width:15%;
+}
+
+.el_priority-no{
+    display:inline-block;
+    width:15%;
+}
+.el_priority-name{
+    display:inline-block;
+    width:40%;
+}
+.el_priority-priority{
+    display:inline-block;
+}
+
+.priority_pragma{
+    border:0;
+    width:80px;
+}
+
+.left_page_responsible{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.pragma_res_lir_new{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.pragma_res_lir_class{
+    margin-left:10px;
+    width:100px;
+}
+
+.priority-table_pragma{
+    margin-top:10px;
+}
+
+
+.pragma-lirax-core_pipeline{
+    margin-top:15px;
+    margin-bottom:15px;
+
+    width:100%;
+}

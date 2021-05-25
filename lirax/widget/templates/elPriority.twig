@@ -1,0 +1,10 @@
+<div class="pragma-el_priority" id = "{{ data.id }}">
+    <div class="el_priority-no">{{ data.no }}</div>
+    <div class="el_priority-name">{{ data.name }}</div>
+    <div class="el_priority-priority">
+        {{ include_control('input', {
+            id: 'priority' ~ data.id,
+            class_name: 'priority_pragma',
+            value: data.val
+        }) }}</div>
+</div>

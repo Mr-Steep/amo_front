@@ -1,0 +1,13 @@
+<div class="funnel_number">
+    <div class="pragma-lirax-amo_divalbe">
+        <label class="pragma-lirax-amo_label"
+               for="pragma-lirax-enter_number_funnel_{{ name_funnel }}"
+               id="{{ id_funnel }}">{{ name_funnel }}
+        </label>
+    </div>
+
+    {{ include_control('input', {
+        id: "funnel_"~id_funnel,
+        class_name: 'funnel_number_input'
+    }) }}
+</div>

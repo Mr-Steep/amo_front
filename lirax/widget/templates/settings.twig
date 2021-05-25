@@ -1,0 +1,108 @@
+<div class="pragma_full_data">
+<div class="core_pragma_lirax">
+
+</div>
+    <div class="footer_lirAx-pragma">
+
+        <div class="left_page_responsible">
+            <label for="lirax-page_responsible">Время проверки дозвона до "Ответственного"</label>
+            {{ include_control('input', {
+                id: 'pragma-responsible',
+                type: "number",
+                class_name: 'pragma-lirax-responsible'
+            }) }}
+            <label for="lirax-min_responsible">минут</label>
+
+        </div>
+
+
+        <label for="footer_lirAx-pragma">Рабочее время:</label>
+
+        <div class="label_time_start">
+            {{ include_control('input', {
+                id: 'time-pragma_id_start',
+                type: "time",
+                class_name: 'time-pragma_foot_start'
+            }) }}
+        </div>
+
+
+        <div class="label_time_finish">
+            <label for="time-pragma_id">До</label>
+            {{ include_control('input', {
+                id: 'time-pragma_id-finish',
+                type: "time",
+                class_name: 'time-pragma_foot_finish'
+            }) }}
+        </div>
+
+
+        <div class="quantity_tell">
+            <label for="time-quantity_tell">Количество попыток дозвона до клиента (ЧЧ:ММ):
+            </label>
+            {{ include_control('input', {
+                id: 'quantity_tell',
+                type: "number",
+                class_name: 'pragma-quantity_tell'
+            }) }}
+
+            <div class="place_quantity"></div>
+        </div>
+
+
+    </div>
+
+
+    <div class="pragma-lirax-amo">
+
+        <div class="left_page_lirax">
+            {{ include_control('checkbox', {
+                id: 'pragma-lirax-using_shop',
+                text: 'Использовать магазины',
+                class_name: 'pragma-lirax-amo--using_shop'
+            }) }}
+            <div class="pragma-lirax-amo--digital_funnel">
+            </div>
+
+        </div>
+
+        <div class="right_page_lirax">
+            {{ include_control('checkbox', {
+                id: 'pragma-lirax-funnel_number',
+                text: 'Номер для воронки',
+                class_name: 'pragma-lirax-amo--funnel_number'
+            }) }}
+
+            <div class="pragma-lirax-place-funnel_number">
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="pragma_work_custom">
+        <div class="work_custom-priority">
+            {{ include_control('checkbox', {
+                id: 'pragma-lirax-priority',
+                text: 'Приоритет',
+                class_name: 'pragma-lirax-amo-priority'
+            }) }}
+        </div>
+
+        <div class="priority-table_pragma_all">
+            <div class="priority-table_pragma">
+                <div class="table_pragma-no">№</div>
+                <div class="table_pragma-name">Имя</div>
+                <div class="table_pragma-priority">Приоритет менеджеров</div>
+            </div>
+
+            <div class="pragma-priority_work_custom">
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
