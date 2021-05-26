@@ -1,0 +1,64 @@
+<div class="consumption_pragma">
+
+
+    <div class="consumption_pragma-header">
+
+        {{ include_control('date_field', {
+            id: "_search_date",
+            type: "range",
+            name: 'date',
+            placeholder:'Поиск по дате',
+            class_name: 'calendar_search_date'
+        }) }}
+
+
+    </div>
+
+
+    <div class="consumption_pragma-body">
+
+        <div class="body-consumption_table">
+            <div class="consumption_table-no">
+                <div class="consumption_table-no-label">
+                    №
+                </div>
+            </div>
+            <div class="consumption_table-date">
+                <div class="consumption_table-date-label">
+                    ДАТА ПРОДАЖИ
+                </div>
+            </div>
+
+            <div class="consumption_table-price">
+                <div class="consumption_table-price-label">
+                    ЦЕНА ПРОДАЖИ
+                </div>
+            </div>
+
+            <div class="consumption_table-responsible">
+                <div class="consumption_table-responsible-label">
+                    ОТВЕТСТВЕННЫЙ
+                </div>
+            </div>
+            <div class="consumption_table-lead">
+                <div class="consumption_table-lead-label">
+                    НАЗВАНИЕ СДЕЛКИ
+                </div>
+            </div>
+            <div class="consumption_table-contact">
+                <div class="consumption_table-contact-label">
+                    НАЗВАНИЕ КОНТАКТА
+                </div>
+            </div>
+
+        </div>
+
+        <div class="consumption_table_body"></div>
+    </div>
+
+
+    <div class="consumption_pragma-footer"></div>
+
+
+</div>
+

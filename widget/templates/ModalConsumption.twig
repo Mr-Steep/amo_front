@@ -1,0 +1,64 @@
+<div class="modal_consumption">
+
+    <div class="modal_consumption-head_color"></div>
+
+    <div class="modal_consumption-header">
+        <div class="consumption-header_label">Продажа</div>
+        <div class="consumption-header_id_leads">{{ id_leads }}</div>
+        <div class="consumption-header_label_2">от</div>
+        <div class="consumption-header_date">{{ date }}</div>
+        <div class="consumption-status"></div>
+    </div>
+
+
+    <div class="modal_consumption-body">
+        <div class="consumption-body_first">
+            <div class="consumption-body-leads">
+                <div class="body-leads_label">Название сделки:</div>
+                <div class="body-leads_value"><a target="_blank" href="{{ href_leads }}"
+                                                 class="body-leads_leads">{{ name_leads }}</a>
+                </div>
+            </div>
+
+            <div class="consumption-body-customer">
+                <div class="body-customer_label">Название контакта:</div>
+                <div class="body-customer_value"><a target="_blank" href="{{ href_contact }}">{{ customer }}</a></div>
+            </div>
+
+            <div class="consumption-body-tel">
+                <div class="body-tel_label">Телефон клиента:</div>
+                <div class="body-tel_customer_tel">{{ customer_tel }}</div>
+            </div>
+        </div>
+
+        <div class="consumption-body_second">
+
+            <div class="m_table_consumption">
+                <div class="m_table_consumption-no">№</div>
+                <div class="m_table_consumption-article">Артикул</div>
+                <div class="m_table_consumption-name">Наименование</div>
+                <div class="m_table_consumption-quantity">Количество</div>
+                <div class="m_table_consumption-price_selling">Цена продажи</div>
+                <div class="m_table_consumption-sum">Сумма</div>
+
+            </div>
+
+            <div class="m_table_consumption_body"></div>
+
+
+        </div>
+    </div>
+
+
+    <div class="modal_consumption-footer">
+        <div class="consumption-footer-total">
+            <div class="footer-total-label">Итого:</div>
+            <div class="footer-total-value"></div>
+
+
+        </div>
+
+    </div>
+
+
+</div>

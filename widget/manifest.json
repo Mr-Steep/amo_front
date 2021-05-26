@@ -1,0 +1,37 @@
+{
+  "widget": {
+    "name": "widget.name",
+    "description": "widget.description",
+    "short_description": "widget.short_description",
+    "version": "1.0.3",
+    "interface_version": 2,
+    "init_once": true,
+    "locale": [
+      "ru"
+    ],
+    "installation": true
+
+  },
+  "locations": [
+    "lcard",
+    "everywhere",
+    "card_sdk",
+    "widget_page"
+  ],
+  "left_menu": {
+    "pragma_stock": {
+      "title": "stock.name_left",
+      "icon": "images/stock.svg",
+      "sort": {
+        "after": "settings"
+      }
+    }
+  },
+  "settings": {
+    "api_key": {
+      "name": "settings.api_key",
+      "type": "text",
+      "required": false
+    }
+  }
+}

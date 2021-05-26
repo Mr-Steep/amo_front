@@ -1,0 +1,10 @@
+<div class="pipeline-stock" id="{{id_status}}" data-val ="{{ name_status }}" >
+    <label for="">{{ name_status }}</label>
+    {{ include_control('select', {
+        id: 'exsi_'~ id_status,
+        val: id_status,
+        items: item,
+        class_name: "stock-el_pipe",
+        selected: selected,
+    }) }}
+</div>

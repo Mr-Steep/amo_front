@@ -1,0 +1,10 @@
+<div class="modal-export__last-file"><span
+            class="modal-export__file-time">Последний экспорт: {{obj.time}}</span><span
+            class="modal-export__file-size">{{obj.size}} KB&nbsp;/&nbsp;{{ obj.str }}&nbsp;стр</span>
+    <div class="modal-export__file-container">
+        <svg class="svg-icon svg-common--export--load-file-dims">
+            <use xlink:href="#common--export--load-file"></use>
+        </svg>
+        <a class="modal-export__file-name" download="{{ obj.name }}"
+           href="{{ obj.url }}">{{ obj.name }}</a></div>
+</div>

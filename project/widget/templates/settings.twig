@@ -1,0 +1,89 @@
+<div class="stock_settings">
+
+
+    <div class="stock_settings-header">
+
+ <div class="header-pragma_float_number">
+     <div class="pragma_float_number-title">
+
+     </div>
+
+
+     <div class="pragma_float_number-val">
+         {{ include_control('checkbox', {
+             id: "coun_pragma_float",
+             name: 'checkbox',
+             text: 'Дробные числа',
+             checked: fractional,
+             text_class_name: 'pragma_float_number'
+         }) }}
+     </div>
+
+
+ </div>
+
+
+        {# <div class="header-country"> #}
+        {# <label for="country_input">Страна</label> #}
+        {# {{ include_control('select', { #}
+        {# id: "country_input", #}
+        {# items: [ #}
+        {# { id: '_RB', option: 'Республика Беларусь' }, #}
+        {# { id: '_RF', option: 'Российская Федерация' }, #}
+        {# { id: '_UK', option: 'Украина' }, #}
+        {# ], #}
+        {# class_name: "header-country_input" #}
+        {# }) }} #}
+        {# </div> #}
+        {# <div class="header-currency"> #}
+        {# <label for="currency_input">Валюта</label> #}
+        {# {{ include_control('select', { #}
+        {# id: "currency_input", #}
+        {# items: [ #}
+        {# { id: '_RB_m', option: 'Белорусский рубль' }, #}
+        {# { id: '_RF_m', option: 'Российский рубль' }, #}
+        {# { id: '_UK_m', option: 'Украинская гривна' }, #}
+        {# ], #}
+        {# class_name: "header-currency_input" #}
+        {# }) }} #}
+        {# </div> #}
+        {# <div class="header-elimination"> #}
+        {# <label for="elimination_input">Отображение валюты</label> #}
+        {# {{ include_control('input', { #}
+        {# id: "elimination_input", #}
+        {# class_name: "header-elimination_input" #}
+        {# }) }} #}
+        {# </div> #}
+
+    </div>
+
+    <div class="label-stock_settings">
+        <p>Отображение статусов сделки</p>
+
+
+    </div>
+
+    <div class="select-stock-set">
+        {{ include_control('select', {
+            id: "epipelines_id",
+            class_name: "header-select_pip",
+            items: pipelines
+        }) }}
+    </div>
+
+
+    <div class="stock_settings-body">
+
+    </div>
+
+    <div class="stock_settings-footer">
+
+
+        {{ include_control('button', {
+            id: id,
+            text: "Сохранить" ,
+            class_name: "stock_settings-save",
+        }) }}
+    </div>
+
+</div>

@@ -1,0 +1,40 @@
+<div class="create_stock_pragma" id = "modal_{{ data.id }}">
+
+    <div class="stock_pragma-header_crreaf">
+    </div>
+
+    <div class="create_stock_name">
+        <div class="stock_name-label">Название</div>
+        {{ include_control('input', {
+            id: "stock_name",
+            class_name: "m-stock_name_la"
+        }) }}
+    </div>
+
+    <div class="create_stock_address">
+        <div class="stock_address-label"> Адрес </div>
+        {{ include_control('input', {
+            id: "stock_address",
+            class_name: "m-stock_address_la"
+        }) }}
+    </div>
+
+    <div class="stock_pragma-footer_m_c">
+
+
+        {{ include_control('button', {
+            id: "Mpragma-footer__cancel",
+            text: data.btncancel,
+            class_name: "btn_ooter_cancel",
+        }) }}
+
+        {{ include_control('button', {
+            id: "Mpragma-footer__save",
+            text: data.btnsave,
+            class_name: "btn_ooter_save",
+        }) }}
+
+
+
+    </div>
+</div>

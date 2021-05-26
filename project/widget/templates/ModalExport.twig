@@ -1,0 +1,28 @@
+<div class="modal_export-pragma">
+    <div class="modal-export__header"><h3 class="modal-export__header-title">Экспорт </h3>
+        <div class="modal-export__header-buttons">
+            <button type="button" class="button-input button-cancel " tabindex="" style=""><span>Отменить</span>
+            </button>
+            {{ include_control('button', {
+                text: "Экспорт" ,
+                blue:true,
+                class_name: "modal-export__pragma",
+                id: "create_export",
+            }) }}
+        </div>
+    </div>
+
+    <label class="modal-export__format" for="export_csv">
+        <div class="modal-export__format-icon">
+            <svg class="svg-icon svg-common--export--csv-dims">
+                <use xlink:href="#common--export--csv"></use>
+            </svg>
+        </div>
+        <div class="modal-export__format-content">
+            <div class="modal-export__format-title">CSV-файл</div>
+            <div class="modal-export__format-text">Формат поддерживают большее количество программ (Microsoft Outlook,
+                Microsoft Excel)
+            </div>
+        </div>
+    </label>
+</div>

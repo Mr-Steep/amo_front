@@ -1,0 +1,76 @@
+<div class="modal_coming-pragma" id="{{ id }}" data-change="true">
+
+    <div class="coming_modal-pragma_header">
+        <div class="pragma_header_coming-number">
+            <label for="id_coming-number">Поставка №</label>
+            {{ include_control('input', {
+                id: "id_coming-number",
+                readonly: true,
+                class_name: "modal_coming-number",
+            }) }}
+        </div>
+        <div class="pragma_header_coming-date">
+            {{ include_control('date_field', {
+                name: 'date',
+                value: to_day_date,
+                placeholder: 'Выберите дату'
+            }) }}
+        </div>
+    </div>
+
+
+    <div class="pragma_header_coming-provider">
+        <label for="id_coming-provider">Поставщик</label>
+        {{ include_control('input', {
+            id: "id_coming-provider",
+            class_name: "modal_coming-provider",
+        }) }}
+    </div>
+</div>
+
+
+<div class="coming-place_for_coming">
+
+    <div class="table_for_coming">
+        <div class="table_coming_header-No">№</div>
+        <div class="table_coming_header-article">АРТИКУЛ</div>
+        <div class="table_coming_header-name">НАИМЕНОВАНИЕ</div>
+        <div class="table_coming_header-quantity">КОЛИЧЕСТВО</div>
+        <div class="table_coming_header-price_al">ЦЕНА ЗАКУПКИ</div>
+    </div>
+
+    <div class="body-right_catalogs_elen"></div>
+
+
+</div>
+
+
+<div class="coming_modal-pragma_footer">
+    <div class="pragma_footer-btn_add-product">
+        <button type="button" class="button-input button-input_blue   modal-footer-btn_add-product" tabindex="" id="btn_add-product"><span class="button-input-inner ">
+    <svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px" xmlns:xlink="http://www.w3.org/1999/xlink" width="7pt" height="7pt" viewBox="0 0 7 7" version="1.1">
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:10;" d="M 159.259844 0.196133 L 192.210156 0.196133 L 192.210156 351.273867 L 159.259844 351.273867 Z M 159.259844 0.196133 " transform="matrix(0.0199164,0,0,0.0199164,0,0)"></path>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:10;" d="M 159.259844 0.196133 L 192.210156 0.196133 L 192.210156 351.273867 L 159.259844 351.273867 Z M 159.259844 0.196133 " transform="matrix(0.000000000000000001,0.0199164,-0.0199164,0.000000000000000001,7,0)"></path>
+</svg>
+    <span class="button-input-inner__text">ДОБАВИТЬ ТОВАРЫ</span></span></button>
+    </div>
+
+    <div class="pragma_footer-save_coming">
+        {{ include_control('button', {
+            id: "delete_coming",
+            text: "УДАЛИТЬ",
+            class_name: "modal_coming-delete_coming",
+        }) }}
+        {{ include_control('button', {
+            id: "save_coming",
+            blue: true,
+            text: "СОХРАНИТЬ",
+            class_name: "modal_coming-save_coming",
+        }) }}
+    </div>
+
+
+</div>
+
+
+</div>

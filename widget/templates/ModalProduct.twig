@@ -1,0 +1,105 @@
+<div class="modal_product" id="{{ id }}">
+
+    <div class="m_catalog_pragma-header">
+
+        <div class="m_catalog_pragma-body">
+            <div class="m_catalog_pragma-name_catalog">
+                <p>
+                    <label for="name_catalog_inp">Наименование</label>
+                    {{ include_control('input', {
+                        id: "name_catalog_inp",
+                        class_name: "m_catalog_pragma-name_catalog_inp",
+                    }) }}
+                </p>
+
+            </div>
+
+
+            <div class="m_catalog_pragma-description">
+
+
+            </div>
+
+            <div class="m_catalog_pragma-article_catalog">
+                <p>
+                    <label for="name_catalog_article">Артикул</label>
+                    {{ include_control('input', {
+                        id: "name_catalog_article",
+                        class_name: "m_catalog_pragma-article_inpu_catalog",
+                    }) }}
+                </p>
+            </div>
+
+            <div class="m_catalog_pragma-section_catalog">
+                <p>
+                    <label for="section_catalog_inp">Раздел</label>
+                    {{ include_control('select', {
+                        id: "section_catalog_inp",
+                        items: m_data,
+                        class_name: "log_pragma-sectio_iinpu_catalog",
+                        selected: category_id,
+                    }) }}
+                </p>
+
+            </div>
+
+
+
+
+
+
+
+
+            <div class="m_catalog_pragma-unit">
+                <p>
+
+                    <label for="section_select_unit">Ед.Измерения</label>
+                    <input  value="{{ unit }}" class="log_pragma-select_unit" id="section_select_unit" list="select_unit"/>
+                    <datalist id="select_unit">
+                        {{ items }}
+                    </datalist>
+
+                </p>
+
+            </div>
+
+
+            <div class="m_price_sale_catalog">
+                <p>
+                    <label for="m_price_sale_catalog">Цена </label>
+                    {{ include_control('input', {
+                        id: "price_sale_catalog",
+                        type: 'number',
+                        class_name: "cl_pragma-price_sale_catalog",
+                    }) }}
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="m_catalog_pragma-icon">
+
+            <input class='upload_icon' id="upload_icon_img" type="file" name="files[]" style="display: none;"/>
+
+            <img class="m_catalog_pragma-icon-img" src="https://smart.pragma.by/api/integrations/pragma_storage/amocrm/Stock/temp/no.png" alt="">
+        </div>
+
+    </div>
+
+
+    <div class="m_catalog_pragma-footer">
+        {{ include_control('button', {
+            id: id,
+            text: "Удалить" ,
+            class_name: "m_catalog_pragma-button_catalog_delete",
+        }) }}
+        {{ include_control('button', {
+            id: id,
+            text: "Сохранить" ,
+            class_name: "m_catalog_pragma-button_catalog_save",
+        }) }}
+    </div>
+
+
+</div>

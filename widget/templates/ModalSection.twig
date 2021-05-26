@@ -1,0 +1,41 @@
+<div class="modal_section">
+        <div class="modal_section-name">
+            <label for="name_catalog_inp">Наименование</label>
+            {{ include_control('input', {
+                id: "name_catalog_inp",
+                required: true,
+                class_name: "modal_section-name_catalog",
+            }) }}
+        </div>
+
+
+        <div class="modal_section-description">
+
+{#            <label for="description_catalog">Описание</label>#}
+{#            {{ include_control('textarea', {#}
+{#                id: "description_catalog",#}
+{#                required: true,#}
+{#                class_name: "modal_section-description_catalog",#}
+{#            }) }}#}
+
+
+        </div>
+
+
+
+    <div class="modal_section-btn">
+        {{ include_control('button', {
+            id: id,
+            text: "Отмена" ,
+            class_name: "modal_section-delete",
+        }) }}
+        {{ include_control('button', {
+            id: id,
+            text: "Сохранить" ,
+            type: 'submit',
+            class_name: "modal_section-save",
+        }) }}
+    </div>
+
+
+</div>

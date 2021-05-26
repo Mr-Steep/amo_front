@@ -1,0 +1,45 @@
+<div class="PragmaDiscount-all">
+
+
+
+    <div class="PragmaDiscount-header">
+
+        <div class="Discount-header-label">
+            Введите скидку для всех товаров
+        </div>
+
+        <div class="Discount-header_input">
+            {{ include_control('input', {
+                id: "header_input-all",
+                type: "number",
+                class_name: "head_input-all-input",
+            }) }}
+        </div>
+        <div class="pragma_discount-pers_all">%</div>
+
+
+    </div>
+
+
+
+
+    <div class="PragmaDiscount-body">
+
+
+    </div>
+
+
+
+
+    <div class="PragmaDiscount-footer">
+        {{ include_control('button', {
+            class_name: "pragma_discount_all",
+            id: "pragma_discount_all-apply",
+            blue: true,
+            text: 'Применить'
+        }) }}
+
+    </div>
+
+
+</div>

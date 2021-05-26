@@ -1,0 +1,86 @@
+<div class="modal_import_pragma_stock">
+    <div class="modal-export__header"><h3 class="modal-export__header-title">Импорт</h3>
+        <div class="modal-export__header-buttons">
+            <button type="button" class="button-input button-cancel " tabindex="" style=""><span>Отменить</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal-export__formats"><input class="modal-export__format-input hidden" name="type" checked=""
+                                              type="radio" id="import_excel" value="excel"><label
+                class="modal-export__format" for="import_excel">
+            <div class="modal-export__format-icon">
+                <svg class="svg-icon svg-common--export--excel-dims">
+                    <use xlink:href="#common--export--excel"></use>
+                </svg>
+            </div>
+            <div class="modal-export__format-content">
+                <div class="modal-export__format-title">Импорт из Exсel</div>
+                <div class="modal-export__format-text"><p>Импорт из Excel поддерживает следующие форматы файлов .csv.
+                        Импорт позволяет импортировать разом компании, контакты, сделки,
+                        покупателей, все дополнительные поля и примечания.</p>
+                    <p>Если в загружаемом файле есть поле “Дата”, то надо перевести Excel-файл в формат “CSV
+                        (разделители запятые)”. Для этого в Excel нажмите “сохранить как”, далее выберите формат “CSV
+                        (разделители запятые)” и нажмите “сохранить”.</p></div>
+                <input type="file" id="new_import_load_pragma" class="new_import_load hidden">
+                <div class="new-import__in-modal__actions">
+                    <label for="new_import_load_leads">
+                        {{ include_control('button', {
+                            text: "Загрузить файл" ,
+                            class_name: "modal-import_file_pragma",
+                            id: "create_import",
+                        }) }}
+                    </label><a class="new-import__in-modal__example blue-link"
+                               href="/example/import_example_leads_beta_ru.csv" target="_blank">Скачать пример</a>
+                </div>
+            </div>
+        </label>
+
+        {# <input class="modal-export__format-input hidden" name="type" type="radio" id="import_google" #}
+        {# value="google"><label class="modal-export__format" for="import_google"> #}
+        {# <div class="modal-export__format-icon"> #}
+        {# <svg class="svg-icon svg-common--export--google-sheets-dims"> #}
+        {# <use xlink:href="#common--export--google-sheets"></use> #}
+        {# </svg> #}
+        {# </div> #}
+        {# <div class="modal-export__format-content"> #}
+        {# <div class="modal-export__format-title">Импорт из Google таблиц</div> #}
+        {# <div class="modal-export__format-text"><p>Если у Вас уже есть база клиентов в Google Таблицах, то просто #}
+        {# авторизуйтесь в amoCRM и начните работу с ними.</p> #}
+        {# <p>Импорт позволяет импортировать разом компании, контакты, сделки, покупателей, все дополнительные #}
+        {# поля и примечания. Структура таблицы может быть любой. Для импортируемых данных вы можете задать #}
+        {# необходимый тег.</p> #}
+        {# <p>Затем нажать на кнопку “Далее”.</p></div> #}
+        {# <div class="modal-export__format-google new-import__in-modal__actions"> #}
+        {# <div class="google-button "> #}
+        {# <div class="google-button__login js-google-button__login button-input"> #}
+        {# <div class="button-input-inner"> #}
+        {# <div class="google__icon google-button__google-icon google-button__google-icon--medium"> #}
+        {# <svg viewBox="0 0 21 21" y="0" x="0" fill="none" xmlns="http://www.w3.org/2000/svg"> #}
+        {# <circle cx="10.5" cy="10.5" r="10.5" fill="white"></circle> #}
+        {# <g> #}
+        {# <path d="M16.324 9.405h-5.14a.41.41 0 00-.41.41v1.642c0 .227.184.41.41.41h2.895a3.863 3.863 0 01-1.663 1.95l1.234 2.136c1.98-1.145 3.15-3.154 3.15-5.402 0-.32-.024-.55-.07-.807a.413.413 0 00-.406-.34z" #}
+        {# fill="#167EE6"></path> #}
+        {# <path d="M10.5 14.335a3.834 3.834 0 01-3.317-1.92l-2.136 1.232a6.291 6.291 0 008.603 2.309v-.003l-1.234-2.136a3.806 3.806 0 01-1.916.518z" #}
+        {# fill="#12B347"></path> #}
+        {# <path d="M13.65 15.956v-.003l-1.234-2.136a3.806 3.806 0 01-1.916.518V16.8a6.289 6.289 0 003.15-.844z" #}
+        {# fill="#0F993E"></path> #}
+        {# <path d="M6.665 10.5c0-.698.19-1.351.518-1.916L5.047 7.353A6.235 6.235 0 004.2 10.5c0 1.146.308 2.221.847 3.147l2.136-1.231a3.807 3.807 0 01-.518-1.916z" #}
+        {# fill="#FFD500"></path> #}
+        {# <path d="M10.5 6.665c.924 0 1.772.328 2.435.874a.41.41 0 00.55-.024L14.65 6.35a.414.414 0 00-.024-.605A6.281 6.281 0 0010.5 4.2a6.292 6.292 0 00-5.453 3.153l2.136 1.231A3.834 3.834 0 0110.5 6.665z" #}
+        {# fill="#FF4B26"></path> #}
+        {# <path d="M12.935 7.54a.41.41 0 00.55-.025L14.65 6.35a.414.414 0 00-.024-.605A6.281 6.281 0 0010.5 4.2v2.465c.924 0 1.772.328 2.435.874z" #}
+        {# fill="#D93F21"></path> #}
+        {# </g> #}
+        {# </svg> #}
+        {# </div> #}
+        {# <span class="google-button__login-text">Авторизоваться</span></div> #}
+        {# </div> #}
+        {# </div> #}
+        {# </div> #}
+        {# </div> #}
+        {# </label> #}
+
+    </div>
+
+</div>

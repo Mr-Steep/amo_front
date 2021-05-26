@@ -1,0 +1,51 @@
+<div class="pragma-ModalProductInfo">
+<div class="ModalProductInfo-title">
+    <div class="pm-info-title">
+        <label for="pm-info-title">Наименование</label>
+        <p id="pm-info-title">
+            {{ title }}
+        </p>
+    </div>
+
+    <div class="pm-info-ost">
+        <label for="pm-info-ost">Остаток</label>
+        <p id="pm-info-ost">
+            {{ balance }}
+        </p>
+        <p id="pm-info-unit">
+            {{ unit }}
+        </p>
+    </div>
+
+    <div class="pm-info-price_sail">
+        <label for="pm-info-price_sail">Цена продажи</label>
+        <p id="pm-info-price_sail">
+            {{ selling_price }}
+        </p>
+    </div>
+
+
+</div>
+
+<div class="ModalProductInfo-right_place">
+    <img class="ModalProductInfo-icon-img" src="{{ img_link }}" alt="">
+</div>
+
+    <div class="ModalProductInfo-history_coming">
+
+        <div class="history_coming-label">История поставок</div>
+
+        <div class="head-history_table">
+            <div class="history_table-no">№</div>
+            <div class="history_table-date">Дата</div>
+            <div class="history_table-quantity">Количество</div>
+            <div class="history_table-price_purchase">Цена закупки</div>
+            <div class="history_table-remainder">Остаток</div>
+        </div>
+
+
+        <div class="body-history_table"></div>
+
+    </div>
+
+</div>

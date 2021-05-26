@@ -1,0 +1,59 @@
+<div class="right_pragma_body-right__top">
+
+
+    <div class="right_pragma__top-first">
+
+        <div class="top-first_pragma_shop">
+        </div>
+
+        <div class="top-first_pragma_list">
+            <svg class="svg-icon svg-common--list-dims">
+                <use xlink:href="#common--list"></use>
+            </svg>
+        </div>
+
+    </div>
+
+
+    <div class="right_pragma__top-second">
+
+        <div class="top-second-search_pragma">
+            <div class="search_pragma-svg">
+                <svg class="list-top-search__icon svg-icon svg-common--filter-search-dims">
+                    <use xlink:href="#common--filter-search"></use>
+                </svg>
+            </div>
+            <div class="search_pragma-input">
+                {{ include_control('input', {
+                    placeholder: 'Поиск и фильтр',
+                    class_name: "search_pragma-second-btn",
+                    id: "search_pragma-second",
+                }) }}
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="right_pragma__top-three">
+
+
+        <div class="top-three_more_default">
+
+            <div id="top-three_more-first"></div>
+
+            <div class="top-three_more-second">
+                {{ include_control('button', {
+                    text: "НАСТРОЙКИ" ,
+                    class_name: "more-second-settings",
+                    id: "second_settings-pragma",
+                }) }}
+            </div>
+        </div>
+
+
+        <div class="top-three_more_addition_btn">
+        </div>
+    </div>
+
+</div>

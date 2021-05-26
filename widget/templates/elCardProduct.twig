@@ -1,0 +1,90 @@
+<div class="el-product_card" id="{{ id }}" data-table="pragma_table_{{ tbl }}">
+
+    <div class="el-name">
+        <div class="el-name-label">
+            {{ name }}
+        </div>
+    </div>
+
+    <div class="el_article">
+        <div class="el_article-label">{{ article }}</div>
+    </div>
+
+    <div class="el-quantity">
+        <div class="el-quantity-label">
+            {{ include_control('input', {
+                id: "add_all_products_id_" ~ id,
+                value: quantity,
+                class_name: "add_all_products",
+            }) }}
+        </div>
+    </div>
+
+    <div class="el-price_sail">
+        <div class="el-price_sail-label">
+            {{ include_control('button', {
+                id: "products_minus_id_" ~ id,
+                text: '-',
+                class_name: "pragma_storage-plus",
+            }) }}
+
+            {{ include_control('input', {
+                id: "products_id_" ~ id,
+                value: price,
+                class_name: "add_price_products",
+            }) }}
+
+            {{ include_control('button', {
+                id: "products_plus_id_" ~ id,
+                text: '+',
+                class_name: "pragma_storage-minus",
+            }) }}
+
+        </div>
+
+    </div>
+
+    <div class="el-price_sail_all">
+        <div class="el-price_sail_all-label">
+            {{ include_control('input', {
+                name: 'username',
+                class_name: "sail_all",
+                id: "sail_all_" ~ id,
+                disabled: true
+            }) }}
+        </div>
+    </div>
+    <div class="el-pragma_discount_pr">
+        <div class="el-pragma_discount_pr-label" title="Скидка">
+        </div>
+    </div>
+
+    <div class="el-pragma_lead_delete">
+        <div class="el-pragma_lead_delete-label" title="Удалить">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.87101 13.6216H4.12912C3.97246 13.6224 3.82128 13.564 3.70578 13.4582C3.59029 13.3523 3.51898 13.2068 3.50612 13.0506L2.66858 3.41845L3.04601 3.38647L3.88355 13.0185C3.88886 13.0799 3.91705 13.1371 3.96253 13.1787C4.00801 13.2203 4.06747 13.2434 4.12912 13.2432H9.87101C9.93288 13.2434 9.99256 13.2203 10.0381 13.1785C10.0837 13.1367 10.1119 13.0792 10.117 13.0175L10.9541 3.38647L11.331 3.4192L10.494 13.0504C10.4812 13.2066 10.4099 13.3522 10.2944 13.4581C10.1789 13.564 10.0277 13.6224 9.87101 13.6216Z"
+                      fill="red"></path>
+                <path d="M11.7969 3.59153H2.20311C2.15293 3.59153 2.10481 3.5716 2.06933 3.53612C2.03385 3.50064 2.01392 3.45252 2.01392 3.40234V2.74812C2.01422 2.46676 2.12611 2.197 2.32504 1.99803C2.52398 1.79906 2.79372 1.68712 3.07508 1.68677H10.9249C11.2063 1.68712 11.476 1.79906 11.675 1.99803C11.8739 2.197 11.9858 2.46676 11.9861 2.74812V3.40234C11.9861 3.45252 11.9661 3.50064 11.9307 3.53612C11.8952 3.5716 11.8471 3.59153 11.7969 3.59153ZM2.39211 3.21315H11.6077V2.74812C11.6075 2.56708 11.5355 2.39351 11.4075 2.26547C11.2795 2.13744 11.106 2.0654 10.9249 2.06515H3.07508C2.89404 2.0654 2.72048 2.13744 2.59249 2.26547C2.46449 2.39351 2.39249 2.56708 2.39229 2.74812L2.39211 3.21315Z"
+                      fill="red"></path>
+                <path d="M8.74449 2.06504H5.25547C5.2053 2.06504 5.15718 2.04511 5.1217 2.00963C5.08622 1.97415 5.06628 1.92603 5.06628 1.87585V1.43977C5.06658 1.15834 5.17853 0.888529 5.37754 0.689546C5.57656 0.490564 5.84639 0.378668 6.12782 0.378418H7.87214C8.15353 0.378718 8.42332 0.490636 8.62229 0.689613C8.82127 0.888591 8.93319 1.15838 8.93349 1.43977V1.87491C8.93361 1.89982 8.92881 1.9245 8.91937 1.94755C8.90993 1.97061 8.89604 1.99156 8.87848 2.00923C8.86092 2.0269 8.84004 2.04092 8.81705 2.0505C8.79405 2.06008 8.7694 2.06502 8.74449 2.06504ZM5.44485 1.68666H8.5553V1.43977C8.5551 1.25866 8.48305 1.08503 8.35497 0.95699C8.22689 0.828946 8.05325 0.756947 7.87214 0.756797H6.12782C5.94675 0.756998 5.77315 0.829018 5.64511 0.957057C5.51707 1.0851 5.44505 1.2587 5.44485 1.43977V1.68666Z"
+                      fill="red"></path>
+                <path d="M8.55701 11.9534L8.9972 4.86767L9.37482 4.89113L8.93463 11.9768L8.55701 11.9534Z"
+                      fill="red"></path>
+                <path d="M6.81079 4.87402H7.18918V11.9607H6.81079V4.87402Z" fill="red"></path>
+                <path d="M4.6283 4.88696L5.00592 4.86388L5.43902 11.9496L5.06139 11.9727L4.6283 4.88696Z" fill="red"></path>
+            </svg>
+        </div>
+    </div>
+
+    <div class="el-pragma_checkbox">
+        <div class="el-pragma_checkbox-label">
+            <input type="checkbox" id="products_id_{{ id }}" class="pragma_checkbox-leads_storage">
+        </div>
+    </div>
+
+    <div class="prag_place-products_all" id=pragma_line_{{ id }} style="display: none;"></div>
+
+    <div class="detail_coming-card" hidden></div>
+
+
+</div>

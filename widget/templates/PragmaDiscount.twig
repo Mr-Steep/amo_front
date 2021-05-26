@@ -1,0 +1,64 @@
+<div class="pragma_discount">
+
+
+    <div class="pragma_discount-header">
+
+        <div class="pragma_discount-label">
+            Скидкa:  </div>
+
+        <div class="pragma_discount-input">
+            {{ include_control('input', {
+                id: "pragma_discount_" ~ id,
+                value: discount,
+                type: "number",
+                class_name: "pragma_discount-input_product",
+            }) }}
+        </div>
+        <div class="pragma_discount-pers">%</div>
+
+    </div>
+
+
+    <div class="pragma_discount-body">
+        <div class="discount_body-label">
+            Без скидки:
+        </div>
+        <div class="pragma_discount-body_input">
+
+            {{ include_control('input', {
+                id: "discount_full_price",
+                value: full_price,
+                readonly: true,
+                type: "number",
+                class_name: "discount_full_price-body_input",
+            }) }}
+
+        </div>
+    </div>
+
+    <div class="pragma_discount-footer">
+        <div class="discount_footer-label">
+            Cо скидкой:
+        </div>
+        <div class="pragma_discount-footer_input-pot">
+            {{ include_control('input', {
+                id: "pragma_discount_id",
+                value: discount_price,
+                type: "number",
+                class_name: "pragma_discount-footer_input",
+            }) }}
+
+        </div>
+    </div>
+
+
+    <div class="pragma_discount-btn_app">
+        {{ include_control('button', {
+            class_name: "pragma_discount",
+            id: "pragma_discount_apply",
+            text: 'Применить'
+        }) }}
+    </div>
+
+
+</div>

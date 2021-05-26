@@ -1,0 +1,37 @@
+<div class="modal_progress-pragma">
+    <div class="modal-body__inner export_popup clearfix"><h2 class="modal-body__caption head_2">Экспорт завершен</h2>
+        <div class="modal-export__last-file export_pragma_drops">
+            <div class="export_pragma_drops =_svg">
+                <svg fill="none" viewBox="0 0 20 24" id="common--export--load-file" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.462 12.308H5.539v-.616h4.923v.616zM16.616 12.308h-4.924v-.616h4.924v.616z"
+                          fill="#9CD3FF"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.462 15.385H5.539v-.616h4.923v.616zM16.616 15.385h-4.924v-.616h4.924v.616z"
+                          fill="#A0B04B"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.462 18.154H5.539v-.616h4.923v.616zM16.616 18.154h-4.924v-.616h4.924v.616z"
+                          fill="#F9F967"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M1.538.615a.923.923 0 00-.923.923v17.706c0 .51.414.923.923.923h1.539V4.615c0-.85.689-1.538 1.538-1.538h9.05L11.223.855a.923.923 0 00-.62-.24H1.537zm12.616 3.077H4.615a.923.923 0 00-.923.923v17.846c0 .51.414.924.923.924h12.923c.51 0 .924-.414.924-.924V8h-2.77c-.85 0-1.538-.689-1.538-1.538v-2.77zm3.872 3.693h-2.334a.923.923 0 01-.923-.923V4.127l3.257 3.258zM3.076 20.783v1.678c0 .85.69 1.539 1.54 1.539h12.922c.85 0 1.539-.689 1.539-1.538V7.565l-4.403-4.403L11.636.4a1.539 1.539 0 00-1.035-.4H1.538C.688 0 0 .689 0 1.538v17.706c0 .85.689 1.539 1.538 1.539h1.539z"
+                          fill="#CFCFCF"></path>
+                </svg>
+            </div>
+            <div class="modal-export__file-container export_pragma_drops_two">
+                <div class="modal-export__file-info"><a class="modal-export__file-name"
+                                                        download="amocrm_export_contacts_and_companies_2021-05-15.csv"
+                                                        href="{{ obj.url }}">{{ obj.name }}</a><span
+                            class="modal-export__file-size" style="margin-left: 70px;">{{ obj.size }}&nbsp;KB&nbsp;/&nbsp;{{ obj.str }}&nbsp;строк</span>
+                </div>
+                <span class="modal-export__file-time">{{ obj.time }}</span></div>
+        </div>
+        <div class="modal-body__actions "><a download="amocrm_export_contacts_and_companies_2021-05-15.csv"
+                                            href="{{ obj.url }}">
+                <button type="button" class="button-input    button-input_blue modal-export__save-button" tabindex="">
+                    <span class="button-input-inner "><svg class="svg-icon svg-common--export--download-dims"><use
+                                    xlink:href="#common--export--download"></use></svg><span
+                                class="button-input-inner__text">Скачать файл</span></span>
+                </button>
+            </a></div>
+    </div>
+</div>

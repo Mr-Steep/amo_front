@@ -1,0 +1,46 @@
+<div class="modal_import_settings">
+    <h2 class="modal-body__caption import_list__caption">Настройки импорта</h2>
+    <div class="modal_import_settings-sett_1">
+        <span class="new-import__settings__title">Разделитель:</span>
+
+        {{ include_control('select', {
+            text: "sett_1" ,
+            class_name: "modal-item_delimetr",
+            items:[
+                { id: 1, option: 'Точка с запятой (";")' },
+                { id: 2, option: 'Запятая (",")' },
+                { id: 3, option: 'Табуляция ("	")' },
+            ],
+        }) }}
+
+    </div>
+
+    <div class="modal_import_settings-table">
+
+
+
+    </div>
+
+    <div class="prag_stock_new-import__checkbox"><label class="control-checkbox   ">
+            <div class="control-checkbox__body"><input type="checkbox" class="" name="update_entity_input"
+                                                       id="update_entity_input" value="y" data-value="y"><span
+                        class="control-checkbox__helper "></span></div>
+            <div class="control-checkbox__text element__text " title="Разрешить обновлять старые данные">Разрешить
+                обновлять cтарые данные
+            </div>
+        </label></div>
+
+
+    <div class="modal_import_settings-body__actions ">
+        {{ include_control('button', {
+            text: "Далее" ,
+            class_name: "modal_import_settings_next",
+            id: "import_settings_next",
+        }) }}
+        {{ include_control('button', {
+            text: "Отмена" ,
+            class_name: "modal_import_settings_cancel",
+            id: "import_settings_cancel",
+        }) }}
+    </div>
+</div>

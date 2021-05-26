@@ -1,0 +1,20 @@
+<div class="item-stock_el" id="el_stock_{{ id }}">
+    {{ include_control('button', {
+        id: "id_stock_" ~ id,
+        text: name ,
+        class_name: "stock_el-class",
+    }) }}
+
+    <div class="stock_el_change_btn">
+        <button type="button" class="button-input    stock_el_change" tabindex="" id="sel_change{{ id }}">
+            <span class="button-input-inner ">
+                <span class="js-list-row__cell-edit pensil_edit_stock_pragma" title="Редактировать">
+                   <svg class="svg-icon list-row__cell-edit-icon list-row__cell-edit-icon_pencil svg-common--edit-pencil-dims">
+                       <use xlink:href="#common--edit-pencil"></use>
+                   </svg>
+                </span>
+            </span>
+        </button>
+    </div>
+
+</div>

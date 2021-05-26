@@ -1,0 +1,20 @@
+{
+  "widget": {
+    "name": "Склад",
+    "short_description": "Short description",
+    "description": "Full description",
+    "tour_description": "Tour description"
+  },
+  "settings": {
+    "api_key": "api_key"
+  },
+  "advanced": {
+    "title": "Склад"
+  },
+  "dp": {
+    "message": "Сообщение"
+  },
+  "stock": {
+    "name_left": "Склад"
+  }
+}
